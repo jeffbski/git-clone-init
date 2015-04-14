@@ -17,8 +17,8 @@ git clone "$baseRepo" "$projectName"
 cd "$projectName"
 rm -rf .git
 git init
-# replace REPO with projectName in a few files
-sed -i'.orig' "s/REPO/$projectName/g" package.json README.md
+# replace PROJECT_NAME with projectName in a few files
+sed -i'.orig' "s/PROJECT_NAME/$projectName/g" package.json README.md
 rm package.json.orig README.md.orig
 git add .
 git commit -m "Initial commit"
