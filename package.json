@@ -1,0 +1,9 @@
+{
+  "name": "git-clone-init",
+  "version": "1.0.0",
+  "description": "Clone git repo, rm .git dir, git init, sed REPO, git commit",
+  "bin": "./git-clone-init.bash",
+  "repository": { "type": "git", "url": "http://github.com/jeffbski/git-clone-init.git" },
+  "author": "Jeff Barczewski",
+  "license": "MIT"
+}
