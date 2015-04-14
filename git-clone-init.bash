@@ -10,6 +10,12 @@ if [ -z "$baseRepo" ] || [ -z "$projectName" ]; then
     exit 1
 fi
 
+# verify that directory doesn't already exist
+if [ -e "$projectName" ]; then
+    echo "A directory $projectName already exists, exiting w/o change"
+    exit 2
+fi
+
 # exit on any error
 set -e
 
