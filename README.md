@@ -35,6 +35,9 @@ npm install -g git-clone-init # install once
 # run git-clone-init with gitPath and your desired projectName
 # it clones and inits into a new folder projectName
 git-clone-init https://github.com/jeffbski/base-react-min.git projectName
+
+# You may use gitURLs or local paths to a git project
+git-clone-init ~/projects/base-react projectName
 ```
 
 ## Requirements
