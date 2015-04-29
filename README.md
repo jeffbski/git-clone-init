@@ -44,7 +44,7 @@ git-clone-init ~/projects/base-react projectName
 
  - requires bash
 
-## Details
+## Rationale
 
 In order to create new projects, I need a way to quickly setup a structure and copy in some files. I wanted something easier and lighter than a yeoman generator and since I normally just do this with git clone, I figured I could easily wrap up a few commands in this bash script.
 
