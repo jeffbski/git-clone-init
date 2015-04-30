@@ -1,6 +1,6 @@
 # git-clone-init - create new project from clone
 
-Creates a new `git-clone-init` script in your path which can be used to quickly creates a new project from a git clone. [See below for details](#what-it-does) of how it operates.
+Creates a new `git-clone-init` bash script in your path which can be used to quickly create a new project from a git clone. [See below for details](#what-it-does) of what it does.
 
 ## Usage
 
@@ -22,7 +22,7 @@ git-clone-init ~/projects/base-react projectName
 
 ## What it does
 
-This is a rough summary of the commands it performed, see `git-clone-init.bash` for full details.
+This is a rough summary of the commands performed by git-clone-init, see `git-clone-init.bash` for full details.
 
 ```bash
 baseRepo="$1"
