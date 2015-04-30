@@ -1,12 +1,34 @@
 # git-clone-init - create new project from clone
 
-Creates a new `git-clone-init` script in your path which can be used to quickly creates a new project from a git clone. It uses roughly these bash commands:
+Creates a new `git-clone-init` script in your path which can be used to quickly creates a new project from a git clone. [See below for details](#what-it-does) of how it operates.
+
+## Usage
+
+```bash
+npm install -g git-clone-init # install once
+
+# when you want to create new project, cd to a parent directory
+# run git-clone-init with gitPath and your desired projectName
+# it clones and inits into a new folder projectName
+git-clone-init https://github.com/jeffbski/base-react-min.git projectName
+
+# You may use gitURLs or local paths to a git project
+git-clone-init ~/projects/base-react projectName
+```
+
+## Requirements
+
+ - requires bash
+
+## What it does
+
+This is a rough summary of the commands it performed, see `git-clone-init.bash` for full details.
 
 ```bash
 baseRepo="$1"
 projectName="$2"
 
-# ... verify params
+# ... verify params, ensure target directory doesn't exist
 
 # exit on any error
 set -e
@@ -26,23 +48,6 @@ git add .
 git commit -m "Initial commit"
 ```
 
-## Usage
-
-```bash
-npm install -g git-clone-init # install once
-
-# when you want to create new project, cd to a parent directory
-# run git-clone-init with gitPath and your desired projectName
-# it clones and inits into a new folder projectName
-git-clone-init https://github.com/jeffbski/base-react-min.git projectName
-
-# You may use gitURLs or local paths to a git project
-git-clone-init ~/projects/base-react projectName
-```
-
-## Requirements
-
- - requires bash
 
 ## Rationale
 
